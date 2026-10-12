@@ -1,0 +1,15 @@
+{
+  "name": "MiniShield",
+  "scopeName": "source.minishield",
+  "patterns": [
+    { "name": "comment.line.double-slash.minishield", "match": "//.*$" },
+    { "name": "string.quoted.double.minishield", "match": "\"[^\"]*\"" },
+    { "name": "keyword.control.minishield", "match": "\\b(IF|THEN|ELSE|END|FOR|FROM|TO|WHILE|DO)\\b" },
+    { "name": "keyword.other.minishield", "match": "\\b(SET|PRINT)\\b" },
+    { "name": "keyword.operator.logical.minishield", "match": "\\b(AND|OR|NOT)\\b" },
+    { "name": "support.function.minishield", "match": "\\b(LENGTH|ABS|SQRT|INT)\\b(?=\\s*\\()" },
+    { "name": "constant.numeric.minishield", "match": "\\b\\d+(\\.\\d+)?\\b" },
+    { "name": "keyword.operator.minishield", "match": "<=|>=|<>|[+\\-*/%=<>]" },
+    { "name": "variable.other.minishield", "match": "\\b[A-Za-z_][A-Za-z0-9_]*\\b" }
+  ]
+}

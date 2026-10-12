@@ -1,0 +1,26 @@
+{
+  "name": "minishield",
+  "displayName": "MiniShield",
+  "description": "Syntax colours for MiniShield, a small language that runs exam-style pseudocode.",
+  "version": "0.1.0",
+  "publisher": "sathya334",
+  "engines": { "vscode": "^1.80.0" },
+  "categories": ["Programming Languages"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "minishield",
+        "aliases": ["MiniShield", "minishield"],
+        "extensions": [".msh"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "minishield",
+        "scopeName": "source.minishield",
+        "path": "./syntaxes/minishield.tmLanguage.json"
+      }
+    ]
+  }
+}

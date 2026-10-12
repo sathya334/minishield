@@ -1,0 +1,16 @@
+// Bubble sort: repeatedly swap neighbours that are in the wrong order
+SET nums TO [64, 25, 12, 22, 11]
+SET n TO LENGTH(nums)
+PRINT "Before:", nums
+
+FOR i FROM 0 TO n - 2
+    FOR j FROM 0 TO n - i - 2
+        IF nums[j] > nums[j + 1] THEN
+            SET temp TO nums[j]
+            SET nums[j] TO nums[j + 1]
+            SET nums[j + 1] TO temp
+        END IF
+    END FOR
+END FOR
+
+PRINT "After:", nums

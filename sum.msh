@@ -1,0 +1,6 @@
+// add the numbers from 1 to 10
+SET total TO 0
+FOR i FROM 1 TO 10
+    SET total TO total + i
+END FOR
+PRINT "The total is", total
